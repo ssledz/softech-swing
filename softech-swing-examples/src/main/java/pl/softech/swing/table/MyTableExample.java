@@ -1,3 +1,18 @@
+/*
+ * Copyright 2013 Sławomir Śledź <slawomir.sledz@sof-tech.pl>.
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
 package pl.softech.swing.table;
 
 import java.awt.BorderLayout;
@@ -10,20 +25,20 @@ import pl.softech.swing.window.Utils;
 
 /**
  *
- * @author Sławomir Śledż
+ * @author Sławomir Śledź <slawomir.sledz@sof-tech.pl>
  * @since 1.0
  */
 public class MyTableExample {
 
     public static class Friend {
 
-        @TableColumn(name = "Imie", editable = true)
+        @TableColumn(name = "Name", editable = true)
         public String firstname;
-        @TableColumn(name = "Nazwisko")
+        @TableColumn(name = "LastName")
         public String lastName;
-        @TableColumn(name = "Wiek", editable = true)
+        @TableColumn(name = "Age", editable = true)
         public Integer age;
-        @TableColumn(name = "Wzrost", editable = true)
+        @TableColumn(name = "Height", editable = true)
         public Float height;
 
         public Friend(String firstname, String lastName, int age, float height) {
@@ -36,13 +51,13 @@ public class MyTableExample {
 
     public static class Person {
 
-        @TableColumn(name = "Imie", editable = true)
+        @TableColumn(name = "Name", editable = true)
         public String firstname;
-        @TableColumn(name = "Nazwisko")
+        @TableColumn(name = "LastName")
         public String lastName;
-        @TableColumn(name = "Waga")
+        @TableColumn(name = "Weight")
         public Float weight;
-        @TableColumn(name = "Przyjaciel", policy = Policy.CHILDREN_FOLLOW)
+        @TableColumn(name = "Friend", policy = Policy.CHILDREN_FOLLOW)
         public Friend friend;
 
         public Person(String firstname, String lastName, float weight) {
