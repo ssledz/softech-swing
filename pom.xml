@@ -3,7 +3,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>pl.softech</groupId>
     <artifactId>softech-swing</artifactId>
-    <version>1.0</version>
+    <version>1.1-SNAPSHOT</version>
     <packaging>pom</packaging>
     <name>softech-swing</name>
     <modules>
@@ -16,7 +16,7 @@
             <dependency>
                 <groupId>pl.softech</groupId>
                 <artifactId>softech-swing-core</artifactId>
-                <version>1.0</version>
+                <version>1.1-SNAPSHOT</version>
             </dependency>
             
             <dependency>
@@ -65,7 +65,7 @@
         <connection>scm:git:git@github.com:ssledz/softech-swing.git</connection>
         <url>scm:git:git@github.com:ssledz/softech-swing.git</url>
         <developerConnection>scm:git:git@github.com:ssledz/softech-swing.git</developerConnection>
-        <tag>softech-swing-1.0</tag>
+        <tag>HEAD</tag>
     </scm>
     
     <distributionManagement>
